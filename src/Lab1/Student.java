@@ -5,10 +5,10 @@ public abstract class Student extends Person {
     protected String regNo;
     protected double gpa;
     public Student(int id, String regNo, String fullName, String email, double gpa) {
-        (fullName, email); this.id=id; this.regNo=regNo; this.gpa=gpa;
+        super(fullName, email); this.id=id; this.regNo=regNo; this.gpa=gpa;
     }
     public Student(String regNo, String fullName, String email) {
-        (fullName, email); this.regNo=regNo;
+        super(fullName, email); this.regNo=regNo;
     }
     public abstract double calculateGPA(); // Lab 1.2 polymorphism
     public String getRegNo() { return regNo; }

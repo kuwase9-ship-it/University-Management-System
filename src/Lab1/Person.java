@@ -1,6 +1,6 @@
 package Lab1;
 
-public class Person {
+public abstract class Person {
     protected String fullName;
     protected String email;
     public Person(String fullName, String email) {
